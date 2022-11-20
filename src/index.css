@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#id0 { --idColor: var(--yellow); }
+#id1 { --idColor: var(--red); }
+#id2 { --idColor: var(--green); }
+#id3 { --idColor: var(--lightBlue); }
+#id4 { --idColor: var(--darkBlue); }
+#id5 { --idColor: var(--purple-dark-1); }
+#id6 { --idColor: var(--purple-medium-1); }
+#id7 { --idColor: var(--yellow); }
+#id8 { --idColor: var(--red); }
+#id9 { --idColor: var(--green); }
+#id10 { --idColor: var(--lightBlue); }
+#id11 { --idColor: var(--darkBlue); }
+#id12 { --idColor: var(--purple-dark-1); }
+#id13 { --idColor: var(--purple-medium-1); }
+#id14 { --idColor: var(--yellow); }
+#id15 { --idColor: var(--red); }
+#id16 { --idColor: var(--green); }
+#id17 { --idColor: var(--lightBlue); }
+#id18 { --idColor: var(--darkBlue); }
+:root {
+    --purple-light-1: #FBFAFB;
+    --purple-light-2: #EEEAF2;
+    --purple-medium-1: #AA83C8;
+    --purple-medium-2: #8B48BF;
+    --purple-medium-3: #5C218A;
+    --purple-dark-1: #3E0F64;
+    --purple-dark-2: #2A0646;
+  
+    --yellow: #EECC75;
+    --green: #CAD297;
+    --aqua: #B7EAC5;
+    --lightBlue: #A2EEE5;
+    --darkBlue: #8EA2EA;
+    --red: #F09D9D;
+  
+    --font-family-titles: 'Dosis', sans-serif;
+    --font-family-text: 'Red Hat Display', sans-serif;
+    --font-weight-title1: 800;
+    --font-weight-title2: 700;
+    --font-weight-text1: 400;
+    --font-weight-text2: 500;
+}
+
+.category-title {
+    margin-bottom: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.category-title::before {
+    content: '••••';
+    color: transparent;
+    background-color: var(--idColor);
+    border-radius: 8px;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+}
+

@@ -1,0 +1,18 @@
+
+* { box-sizing: border-box; }
+
+html, footer { background-color: #5C218A; }
+
+body {
+    background-color: #FBFAFB;
+    margin: 4px 0 0 0 !important;
+    padding: 0;
+}
+
+.search { background-color: #EEEAF2; }
+
+.img { max-width: inherit; }
+
+h3 { font-family: 'Red Hat Display', sans-serif; }
+
+
