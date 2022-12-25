@@ -2,3 +2,8 @@ export * from './Header';
 export * from './Trends';
 export * from './Categories';
 export * from './Footer';
+export * from './Loading';
+export * from './DetailHeader';
+export * from './DetailMovieInfo';
+export * from './DetailCategories';
+export * from './DetailRelatedMovies';

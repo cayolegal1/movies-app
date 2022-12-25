@@ -1,7 +1,7 @@
-import { MovieCategory, TrendingMovie } from "./";
+import {TrendingMovie} from "./";
 
 export type HomePageState = {
     search: string, 
     trendingMovies: TrendingMovie[],
-    categories: MovieCategory[]
+    loading: boolean
   };

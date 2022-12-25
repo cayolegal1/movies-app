@@ -1,19 +1,23 @@
 import { FC } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { HomePage, SearchResult } from './containers';
+import {MoviesStore} from './context';
+import { HomePage, SearchResult, MovieDetail, MoviesByCategory } from './containers';
 import { Footer } from './components';
 import './App.css';
 
 const App: FC = () => {
-
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/:movies' element={<SearchResult />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter> 
+    <MoviesStore>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/:movies/' element={<SearchResult />} />
+          <Route path='/:movie/detail/' element={<MovieDetail />} />
+          <Route path='/:category/movies/' element={<MoviesByCategory />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter> 
+    </MoviesStore>
   )
 }
 
